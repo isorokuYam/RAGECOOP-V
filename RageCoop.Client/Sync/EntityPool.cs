@@ -307,8 +307,8 @@ namespace RageCoop.Client
             allPeds = World.GetAllPeds();
             allVehicles = World.GetAllVehicles();
             allProjectiles = World.GetAllProjectiles();
-            vehStatesPerFrame = allVehicles.Length * 2 / (int)Game.FPS + 1;
-            pedStatesPerFrame = allPeds.Length * 2 / (int)Game.FPS + 1;
+            vehStatesPerFrame = allVehicles.Length;// * 2 / (int)Game.FPS + 1;
+            pedStatesPerFrame = allPeds.Length;// * 2 / (int)Game.FPS + 1;
 #if BENCHMARK
 
             Debug.TimeStamps[TimeStamp.GetAllEntities]=PerfCounter.ElapsedTicks;
